@@ -110,7 +110,7 @@ const auth = function (params) {
               extras = { exchangeBody: config.tokenEndpointParams };
             }
 
-            session = await client.callback(
+            session = await client.oauthCallback(
               redirectUri,
               callbackParams,
               checks,
